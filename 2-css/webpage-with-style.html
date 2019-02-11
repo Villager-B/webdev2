@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <title>Learning Css</title>
     <style type="text/css">
-        p {
-            color: darkgray;
-            font-size: 110%;
-
+        .blue{
+            color: aquamarine;
+        }
+        .texts{
+            font-size: 220%;
+        }
+        .under{
+            text-decoration: underline;
+        }
+        #green{
+            color: darkolivegreen;
         }
 
-        h1 {
-            color: aqua;
-        }
     </style>
 </head>
 
 <body>
     <p>
-        <h1>New Release!!</h1>
+        <h1 class="blue">New Release!!</h1>
     </p>
-    <p>今回は新しくリリースするプロダクトの紹介をします．</p>
-    <p>文言</p>
+    <p class="blue">今回は新しくリリースするプロダクトの紹介をします．</p>
+    <p class="texts">文言</p>
+    <p id="green">このVRゴーグルが<span class="under">解像度</span>が高くなっています．</p>
 
 </body>
 </html>
