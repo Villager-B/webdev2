@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <title>Learning Css</title>
@@ -15,23 +16,43 @@
         .under {
             text-decoration: underline;
         }
-        .first-section{
+
+        .first-section {
             background: #B18181;
             width: 30%;
-            float:right;
+            position: absolute;
+            left: 300px;
+            top: 300px;
+            height: 1000px;
+<!--            position: relative;
+            left: 180px;
+            top: 100px;
+            z-index: 10;
+            opacity: 0.8;
+-->
         }
-        .second-section{
+
+        .second-section {
             background: #A9F5BC;
             width: 30%;
-            float: left;
+            position: fixed;
+
+<!--            position: relative;
+            left: 200px;
+            top: 20px;
+            z-index: 1;
+-->
         }
-        .clear-float{
+
+        .clear-float {
             clear: both;
         }
+
         #green {
             color: darkolivegreen;
 
         }
+
     </style>
 </head>
 
@@ -46,7 +67,8 @@
         <p class="texts">文言</p>
         <p id="green">このVRゴーグルが<span class="under">解像度</span>が高くなっています．</p>
     </div>
-    <div class="clear-float"></div>
+
     <p>Third Paragraph</p>
 </body>
+
 </html>
