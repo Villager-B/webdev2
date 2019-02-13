@@ -5,8 +5,14 @@
     <title>JavaScript</title>
 </head>
 <body>
-    <button onclick="alert('Hi!!')">Click Me
+    <p id="text">Hello World!!</p>
+    <button id="myButton">Change Text</button>
 
-    </button>
+    <script type=text/javascript>
+        document.getElementById("myButton").onclick = function(){
+            //alert("Click Button");
+            document.getElementById("text").innerHTML = "クリックしましたね！！"
+        }
+    </script>
 </body>
 </html>

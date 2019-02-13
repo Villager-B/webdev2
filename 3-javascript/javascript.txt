@@ -4,3 +4,10 @@ JSのonclick Funcを呼び出す．
 
 <button onclick="alert('Hi!!')">Click Me</button>
 
+<script type=text/javascript>
+alert("This is second message!");
+</script>
+
+getElementByIdはID名を指定してブロック要素を取り出す．
+innerHTMLはその中のコンテンツを取り出す．
+document.getElementById("text").innerHTML = "Change Log"
