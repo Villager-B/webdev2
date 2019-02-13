@@ -1,0 +1,6 @@
+## onclick
+
+JSのonclick Funcを呼び出す．
+
+<button onclick="alert('Hi!!')">Click Me</button>
+
