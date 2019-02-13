@@ -1,0 +1,102 @@
+# Cheat Sheet <HTML5>
+
+## 基本構造
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<title>Title</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+## 見出し
+
+<h1>
+<h2>
+<h3>
+<h4>
+<h5>
+<h6>
+
+## 段落
+
+<p>
+
+## 改行
+
+<br>
+
+## テキスト装飾
+
+<strong> 太字
+<em> 斜体
+<mark> 黄色でマーカーを引く
+<del> 文字を線で消す
+<ins> 文字に下線を引く
+<sub> 文字を下付きへ
+<sup> 文字を上付きへ
+
+## リスト
+
+<ul> 番号なしリスト
+    <li> ~~~~
+    <li> ~~~~
+
+<ol> 番号ありリスト
+    <li> ~~~~
+    <li> ~~~~
+
+<ol reversed> 降順にする
+<ol start="番号">　番号から始める
+<ol type=""> アルファベットやギリシャ数字も指定可能
+
+## イメージ
+
+<img src="" alt=""> イメージソースのパスを指定してやるとよい
+height="" 縦
+width=""　横
+
+## フォーム
+
+<form action="">
+
+<input type="text" placeholder=""> テキスト入力フォーム
+<input type="cheakbox" cheaked> チェックボックス
+<input type="radio" name=""> ラジオボタン，nameでグループを指定する
+<input type="submit" value=""> 送信ボタン，valueで”送信”の見え方が変わる
+
+<select> プルダウンメニュー
+    <option selsected> プルダウン内の選択肢
+    <option> ~~~~
+
+## テーブル
+
+<table border>
+    <thead> テーブルヘッダ
+        <tr> 行
+            <th> 各データのヘッダー
+    <tbody> テーブル本体
+        <tr> 行
+            <td> 各データのカラム
+
+## リンク
+
+<a href=""> アンカー　ハイパーリファレンス
+<p id="top"></p>
+<a href="#top">TOP</a> topにジャンプ
+
+## HTMLエンティティ
+
+&lt; <
+&gt; >
+
+## iFrame
+
+<iframe src="" frameborder="0"> 埋め込む
