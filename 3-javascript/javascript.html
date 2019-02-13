@@ -11,7 +11,16 @@
     <script type=text/javascript>
         document.getElementById("myButton").onclick = function(){
             //alert("Click Button");
-            document.getElementById("text").innerHTML = "クリックしましたね！！"
+            document.getElementById("text").innerHTML = "クリックしましたね！！";
+        }
+    </script>
+
+    <p id="secondParagraph">JavaScriptは，</p>
+    <button id="secondButton">追記する</button>
+    <script type="text/javascript">
+        document.getElementById("secondButton").onclick=function(){
+            document.getElementById("secondParagraph").innerHTML += "ブラウザでもサーバーサイドでも動くプログラミング言語です";
+
         }
     </script>
 </body>
