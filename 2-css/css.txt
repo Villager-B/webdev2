@@ -1,0 +1,100 @@
+# Cheat Sheet <CSS3>
+
+<link rel="stylesheet" type="text/css" href="*.css">　外部CSS読み込み
+
+<style type="text/css"> 内部CSS
+
+p {
+    font-size:100%; フォントサイズの変更
+    color:green; 色（RGBでも可能：#ffffff）
+}
+
+h1 {
+
+
+}
+
+.class1{ 複数のブロックに適用可能
+    width:50%;
+    height:100px;
+}
+
+#id1{　特定部分のみに適用
+
+}
+
+<p id="id">サンプル<span class="inline_class">コード</span></p>　部分的にclassを適用
+
+<div> まとめてスタイルを適用する
+<div class="">
+
+## Float
+
+.1st{
+    width:50%;
+    float:right; 右に移動する
+    普通のものとは重ならない
+    他のdivからは見えなくなる
+}
+
+.clear{
+    clear:both;
+}
+
+<div class="1st">sample code</div>
+
+float要素のクリアする
+
+<div class="clear"></div>
+
+## Position
+
+要素と重なる，
+
+.1st{
+    width:50%;
+    position:relative;
+    left: 200px;
+    z-index:1; 大きいほど手前に表示される
+    opacity:0.8; 0~1の範囲，透明度を表す．0が透明
+}
+
+.2nd{
+    width:50%;
+    position:absolute; 絶対位置，スクロールしてもそのまま
+    left:200px;
+    top:200px;
+}
+
+.3rd{
+    width:50%;
+    position:fixed; 画面に固定
+}
+<div class="1st">sample code</div>
+
+## Margin
+
+.1st{
+    width:50%;
+    margin:100px; ４方向にマージンがとられる．
+}
+
+## Padding
+
+.1st{
+    width:50%;
+    padding:100px; div内４方向にpx分拡張される．
+}
+
+## Border
+
+.1st{
+    border: black;
+    border-style: solid double dotted dashed;
+    border-width; 10px 4px 4px 10px;
+    border-radius: 50%;
+}
+
+## Fonts
+<link href="https://fonts.googleapis.com/css?family=Rubik|Titillium+Web" rel="stylesheet">
+font-family: 'Staatliches', cursive;
