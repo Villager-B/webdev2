@@ -17,11 +17,22 @@
 
     <p id="secondParagraph">JavaScriptは，</p>
     <button id="secondButton">追記する</button>
+
+
+    <p id="thirdParagraph">スタイルを変更してみましょう．</p>
+    <button id="changeStyle">スタイルを変更する</button>
+
     <script type="text/javascript">
         document.getElementById("secondButton").onclick=function(){
             document.getElementById("secondParagraph").innerHTML += "ブラウザでもサーバーサイドでも動くプログラミング言語です";
 
         }
+
+        document.getElementById("changeStyle").onclick = function(){
+            //document.getElementById("thirdParagraph").style.color = "green";
+            document.getElementById("thirdParagraph").style.display = "none";
+        }
     </script>
+
 </body>
 </html>
