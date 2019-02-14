@@ -5,32 +5,21 @@
     <title>JavaScript</title>
 </head>
 <body>
-    <p id="text">Hello World!!</p>
-    <button id="myButton">Change Text</button>
+    <p><input type="text" id="inputForm" placeholder="田中太郎">ここに名前を入力してください．</p>
 
-    <script type=text/javascript>
-        document.getElementById("myButton").onclick = function(){
-            //alert("Click Button");
-            document.getElementById("text").innerHTML = "クリックしましたね！！";
-        }
-    </script>
+    <button id="submitButton">送信する</button>
 
-    <p id="secondParagraph">JavaScriptは，</p>
-    <button id="secondButton">追記する</button>
-
-
-    <p id="thirdParagraph">スタイルを変更してみましょう．</p>
-    <button id="changeStyle">スタイルを変更する</button>
+    <p id="newMessage"></p>
 
     <script type="text/javascript">
-        document.getElementById("secondButton").onclick=function(){
-            document.getElementById("secondParagraph").innerHTML += "ブラウザでもサーバーサイドでも動くプログラミング言語です";
+        /*var x = 5;
+        alert(x);*/
+        document.getElementById("submitButton").onclick = function(){
+            var name = "";
+            name = document.getElementById("inputForm").value;
+            // alert(name);
+            document.getElementById("newMessage").innerHTML = name;
 
-        }
-
-        document.getElementById("changeStyle").onclick = function(){
-            //document.getElementById("thirdParagraph").style.color = "green";
-            document.getElementById("thirdParagraph").style.display = "none";
         }
     </script>
 
