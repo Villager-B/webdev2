@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>MiniCharange</title>
+    <style type="text/css">
+        .circle{
+            width:100px;
+            height: 100px;
+            float: left;
+            border-radius: 50%;
+            margin: 20px;
+            opacity: 0.6;
+        }
+        #redc{
+            background-color: red;
+        }
+        #bluec{
+            background-color: blue;
+        }
+        #greenc{
+            background-color: green;
+        }
+        #clear{
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+    <div id="redc" class="circle"></div>
+    <div id="bluec" class="circle"></div>
+    <div id="greenc" class="circle"></div>
+    <div id="clear"></div>
+    <button id="cButton">Disapiaar</button>
+    <script type="text/javascript">
+        document.getElementById("cButton").onclick = function(){
+            document.getElementById("redc").style.display = "none";
+            document.getElementById("bluec").style.display = "none";
+            document.getElementById("greenc").style.display = "none";
+        }
+    </script>
+</body>
+</html>
