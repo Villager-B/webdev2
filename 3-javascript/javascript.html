@@ -6,25 +6,27 @@
 </head>
 <body>
 
+    <p>秘密の暗号を入れてください．</p>
+    <p><input type="text" id="magicWord"></p>
+    <p><button id="cheakMagicWord">暗号をチェックする</button></p>
 
     <script type="text/javascript">
-        /*
-        var myArray = new Array();
-        myArray[0] = "pizza";
-        myArray[1] = 100;
-        alert(myArray.length);
-        console.log(myArray);*/
+        /*var x = 10;
 
-        var tweets = ["Hello","Lunch Time","Job will fin"];
-        alert(tweets[2]);
+        if(x == 1){
+            alert("number = 1");
+        }else{
+            alert("number != 1");
+        }*/
+        document.getElementById("cheakMagicWord").onclick = function(){
+            var magic = document.getElementById("magicWord").value;
 
-        tweets.push = "I will be back";
-
-
-
-        tweets.splice(1,1,"Dinner Time");
-
-        console.log(tweets);
+            if(magic == "tomato"){
+                alert("Yes");
+            }else{
+                alert("No");
+            }
+        }
     </script>
 
 </body>
