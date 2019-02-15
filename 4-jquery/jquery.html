@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <title>jQuery</title>
     <style type="text/css">
-        #clear{
-            clear: both;
+        #circle{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: cadetblue;
+            margin: 30px;
         }
     </style>
 </head>
@@ -14,18 +18,18 @@
 
     <script src="jquery-3.3.1.min.js"></script>
 
-    <p id="text">このテキストはSwitchします．</p>
-    <p id="clear"></p>
-    <button id="tt">Switch</button>
-
+    <div id="circle"></div>
 
     <script type="text/javascript">
-        $("#tt").click(function(){
-            if($("#text").css("display") == "none"){
-                $("#text").fadeIn("slow");
-            }else{
-                $("#text").fadeOut("slow");
-            }
+        $("#circle").click(function(){
+            $("#circle").animate({
+                width:"200px",
+                height:"200px",
+                marginLeft:"150px"},
+                2000,
+                function(){
+                $("#circle").css("background-color","red");
+            });
         })
     </script>
 </body>
