@@ -5,20 +5,13 @@
     <title>jQuery</title>
     <style type="text/css">
         #greenCircle{
-            float:left;
             height: 100px;
             width: 100px;
             border-radius: 50%;
             margin: 10px;
             background-color: aquamarine;
         }
-        .redSquare{
-            float:left;
-            height: 100px;
-            width: 100px;
-            margin: 10px;
-            background-color: indianred;
-        }
+
     </style>
 </head>
 <body>
@@ -27,15 +20,18 @@
     <script src="jquery-3.3.1.min.js"></script>
 
     <div id="greenCircle"></div>
-    <div class="redSquare"></div>
-    <div class="redSquare"></div>
+
+    <p>ここに文章が入ります．</p>
+
+    <iframe src="https://jquery.com/download/" frameborder="0"></iframe>
+
     <script type="text/javascript">
-        $("#greenCircle").click(function(){
-            alert("circle");
+        $("div").hover(function(){
+            //$("p").html("div clicked");
+            //alert($("p").html());
+            $("iframe").attr("src","http://google.co.jp");
         })
-        $(".redSquare").click(function(){
-            alert("square");
-        })
+
     </script>
 </body>
 </html>
